@@ -13,7 +13,7 @@ func TestReduce(t *testing.T) {
 		return a + b
 	}
 
-	result := reduce(list, add)
+	result := Reduce(list, add)
 
 	assert.Equal(t, 6, result)
 	assert.Equal(t, []int{1, 2, 3}, list)
