@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/DAtek/gotils/branch/main/graph/badge.svg?token=7ZUEPF7H54)](https://codecov.io/gh/DAtek/gotils) [![Go Report Card](https://goreportcard.com/badge/github.com/DAtek/gotils)](https://goreportcard.com/report/github.com/DAtek/gotils)
+[![codecov](https://codecov.io/gh/DAtek/gotils/graph/badge.svg?token=7ZUEPF7H54)](https://codecov.io/gh/DAtek/gotils) [![Go Report Card](https://goreportcard.com/badge/github.com/DAtek/gotils)](https://goreportcard.com/report/github.com/DAtek/gotils)
 
 # Gotils
 Golang utilities for building applications.
