@@ -1,14 +1,15 @@
-package gotils
+package gotils_test
 
 import (
 	"errors"
 	"testing"
 
+	"github.com/DAtek/gotils"
 	"github.com/stretchr/testify/assert"
 )
 
-func TestNilOrPanic(t *testing.T) {
+func TestNoErr(t *testing.T) {
 	assert.Panics(t, func() {
-		NilOrPanic(errors.New("UNEXPECTED_ERROR"))
+		gotils.NoErr(errors.New("UNEXPECTED_ERROR"))
 	})
 }

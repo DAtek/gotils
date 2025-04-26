@@ -1,14 +1,12 @@
 package gotils
 
-// Useful in tests
-func NilOrPanic(err error) {
+func NoErr(err error) {
 	if err != nil {
 		panic(err)
 	}
 }
 
-// Useful in tests
-func ResultOrPanic[T any](res T, err error) T {
+func Must[T any](res T, err error) T {
 	if err != nil {
 		panic(err)
 	}

@@ -4,7 +4,7 @@ import (
 	"time"
 )
 
-const ErrorTimeout = Error("TIMEOUT_ERROR")
+const ErrorTimeout Error = "TIMEOUT_ERROR"
 
 type timeout struct {
 	ErrorCh  chan error
@@ -22,12 +22,6 @@ func NewTimeout(duration time.Duration) *timeout {
 		}),
 	}
 
-	return t
-}
-
-// Useful in tests
-func NewTimeoutMs(durationMs uint) *timeout {
-	t := NewTimeout(time.Duration(durationMs) * time.Millisecond)
 	return t
 }
 
