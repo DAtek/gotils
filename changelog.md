@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.2.0] - 2025-04-26
+### Added
+- `ReduceSeq`
+
+### Changed
+- `DateTimeFromStringPanic` -> `MustDateTimeFromString`
+- `ResultOrPanic` -> `Must`
+- `NilOrPanic` -> `NoErr`
+
+### Removed
+- `EnvConfig` (replaced by https://github.com/DAtek/env)
+- `Logger` (there are very good quality loggers out there, eg. https://github.com/phuslu/log)
+- `NewTimeoutMs`
+
 
 ## [v0.1.3] - 2023-04-17
 ### Changed

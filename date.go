@@ -4,9 +4,8 @@ import (
 	"time"
 )
 
-// Useful in tests
-func DateTimeFromStringPanic(dateTimeStr string) *time.Time {
-	return ResultOrPanic(DateTimeFromString(dateTimeStr))
+func MustDateTimeFromString(dateTimeStr string) *time.Time {
+	return Must(DateTimeFromString(dateTimeStr))
 }
 
 func DateTimeFromString(dateTimeStr string) (*time.Time, error) {
